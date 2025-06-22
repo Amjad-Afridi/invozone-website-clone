@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { ContactUsButton } from './buttons/ContactUsButton';
 
 const BusinessStagesComponent = () => {
   const stages = [
@@ -91,17 +92,7 @@ const BusinessStagesComponent = () => {
               </p>
 
               <div className="mt-auto">
-                <button 
-                  className={`${stage.buttonBg} ${stage.id === 'enterprise' ? 'text-white' : 'text-white'} 
-                    px-6 py-3 rounded-full font-semibold flex items-center gap-2 
-                    hover:shadow-lg transition-all duration-300 hover:scale-105`}
-                >
-                  {stage.buttonText}
-                  <div className={`w-8 h-8 ${stage.id === 'enterprise' ? 'bg-white bg-opacity-20' : 'bg-white bg-opacity-20'} 
-                    rounded-full flex items-center justify-center`}>
-                    <ArrowRight size={16} />
-                  </div>
-                </button>
+                <ContactUsButton text={stage.buttonText}/>
               </div>
             </div>
           </div>

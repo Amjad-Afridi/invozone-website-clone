@@ -1,5 +1,6 @@
 import React from 'react';
 import { Settings, Brain, Users, GitBranch, Database, Box } from 'lucide-react';
+import { ContactUsButton } from './buttons/ContactUsButton';
 
 const SoftwareDevelopmentServices = () => {
   const services = [
@@ -75,12 +76,7 @@ const SoftwareDevelopmentServices = () => {
             Forward Planners
           </h2>
         </div>
-        <button className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
-          View All
-          <div className="w-6 h-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-            <span className="text-xs">→</span>
-          </div>
-        </button>
+        <ContactUsButton text='View All'/>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-8">
@@ -141,13 +137,8 @@ const SoftwareDevelopmentServices = () => {
               ))}
             </div>
 
-            {/* View More Button */}
-            <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
-              View More
-              <div className="w-6 h-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                <span className="text-xs">→</span>
-              </div>
-            </button>
+                    <ContactUsButton text='View More'/>
+
           </div>
         </div>
       </div>

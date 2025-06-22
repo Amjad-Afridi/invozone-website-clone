@@ -24,7 +24,7 @@ export const ContactUsButton = ({
         ${className}
       `}
     >
-      <span className="text-gray-800 font-medium text-sm pr-3 group-hover:text-gray-900 transition-colors duration-200">
+      <span className={`text-gray-800 font-medium text-sm pr-3 group-hover:text-gray-900 transition-colors duration-200 ${className}`}>
         {text}
       </span>
       

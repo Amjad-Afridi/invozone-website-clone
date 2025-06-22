@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { ContactUsButton } from './buttons/ContactUsButton';
 
 const CTABannerComponent = () => {
   return (
@@ -26,12 +27,8 @@ const CTABannerComponent = () => {
           </div>
 
           <div className="flex-shrink-0">
-            <button className="bg-black hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-3 transition-all duration-300 hover:shadow-lg hover:scale-105">
-              Explore More
-              <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                <ArrowRight size={18} />
-              </div>
-            </button>
+                            <ContactUsButton text="Explore More" className='text-white'/>
+            
           </div>
         </div>
       </div>
